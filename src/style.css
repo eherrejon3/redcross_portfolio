@@ -371,6 +371,7 @@ a {
   height: 80px;
   z-index: 9999;
   background-color: #ffffff;
+  /* border: 1px solid #4f5969; */
 }
 
 .logo {
@@ -479,7 +480,9 @@ a {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-full);
   padding: var(--spacing-32) var(--spacing-32);
-  background-image: url(./images/concrete_wall.jpg);
+  /* background-image: url(./images/concrete_wall.jpg); */
+  background-color: #dadada;
+  /* background-color: #ffffff; */
 }
 
 @media screen and (max-width: 767px) {
