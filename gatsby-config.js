@@ -7,6 +7,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const myCustomQueries = {
+  xs: '(max-width: 320px)',
+  sm: '(max-width: 720px)',
+  md: '(max-width: 1024px)',
+  l: '(max-width: 1536px)',
+  portrait: '(orientation: portrait)',
+};
 module.exports = {
   siteMetadata: {
     title: `Jordyn Redcross`,
@@ -54,7 +62,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-breakpoints',
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+          queries: myCustomQueries,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {

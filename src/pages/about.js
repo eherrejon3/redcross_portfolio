@@ -1,12 +1,12 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { useBreakpoint } from 'gatsby-plugin-breakpoints'
 
 import Seo from "../components/seo"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 
+const { useBreakpoint } = require('gatsby-plugin-breakpoints');
 
 const About = ({ data, location }) => {  
 
@@ -15,7 +15,7 @@ const About = ({ data, location }) => {
         <div>
           <Navbar></Navbar>
         </div>
-        { !useBreakpoint.xs ? 
+        { useBreakpoint.xs ? 
         // Mobile View Configuration
         <div className="body-global-wrapper">
 
