@@ -14,7 +14,7 @@ module.exports = {
       name: `Elizabeth Herrejon`,
     },
     description: `Jordyn Redcross Modelling Portfolio.`,
-    siteUrl: `https://github.com/valenradovich/`,
+    siteUrl: `https://eherrejon3.github.io/redcross_portfolio/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -54,6 +54,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-breakpoints',
     {
       resolve: `gatsby-plugin-feed`,
       options: {

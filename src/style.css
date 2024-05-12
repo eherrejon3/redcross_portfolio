@@ -241,15 +241,21 @@ a:focus {
   line-height: 0;
 }
 
-.box > img {
+.box-mobile {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.box-mobile > img {
   width: 105%;
   /* height: calc(100% - 10vh); */
   object-fit: cover; 
   transition: .5s;
 }
 
-.box:hover { flex: 1 1 3%; }
-.box:hover > img {
+.box-mobile:hover { flex: 1 1 3%; }
+.box-mobile:hover > img {
   width: 100%;
   height: 100%;
 }
